@@ -19,11 +19,11 @@
         this in META-INF/persistence.xml -->
     <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
         pool-name="ticket-monster" enabled="true" use-java-context="true">
-        <connection-url>jdbc:h2:mem:ticket-monster;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1</connection-url>
+        <connection-url>jdbc:mysql://mysql.ticket-monster-dev.svc.cluster.local:3301/ticketmonster</connection-url>
         <driver>h2</driver>
         <security>
-            <user-name>sa</user-name>
-            <password>sa</password>
+            <user-name>admin</user-name>
+            <password>r3dh4t11</password>
         </security>
     </datasource>
 </datasources>
