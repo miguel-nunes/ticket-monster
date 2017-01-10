@@ -20,7 +20,8 @@
     <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
         pool-name="ticket-monster" enabled="true" use-java-context="true">
         <connection-url>jdbc:mysql://mysql.ticket-monster-dev.svc.cluster.local:3306/ticketmonster</connection-url>
-        <driver>h2</driver>
+        <driver>mysql</driver>
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
         <security>
             <user-name>admin</user-name>
             <password>r3dh4t11</password>
